@@ -13,7 +13,7 @@ RSpec.feature "Creating Articles" do
   scenario "A user fails to create a new article" do
     visit "/"
     click_link "New Article"
-    
+
     fill_in "Title", with: ""
     fill_in "Body", with: ""
     click_button "Create Article"
